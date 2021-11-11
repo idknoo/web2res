@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const MAX_X = 3;
-    const MIN_X= -5;
-    const MAX_Y = 5;
+    const MIN_X = -5;
+    const MAX_Y = 3;
     const MIN_Y = -3;
 
 
@@ -221,12 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
             let {absoluteX, absoluteY} = getAbsoluteOffsetFromXYCoords(x, y, rNew);
             svg.insertAdjacentHTML('beforeend', `<circle r="2" cx=${absoluteX} cy=${absoluteY} class="prev-dot" fill=${fill}></circle>`)
         });
-    }
-
-    function displayMessage(message) {
-        document.getElementById("message-block").classList.remove("disappearing");
-        setTimeout(() => document.getElementById("message-block").classList.add("disappearing"), 0);
-        document.getElementById("info-span").innerHTML = message;
     }
 
     function rowListener() {

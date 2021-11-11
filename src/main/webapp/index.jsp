@@ -132,11 +132,6 @@
                         <input type="radio" id="y3" name="y" value="3">
                         <label for="y3">3</label>
 
-                        <input type="radio" id="y4" name="y" value="4">
-                        <label for="y4">4</label>
-
-                        <input type="radio" id="y5" name="y" value="5">
-                        <label for="y5">5</label>
 
                         <input type="hidden" id="graph-y" name="graphY" value="">
 
@@ -154,7 +149,7 @@
                             <%
                                 String[] options = (String[]) session.getAttribute("options");
                                 if (options == null) {
-                                    options = new String[]{"1", "2", "3", "4", "5"};
+                                    options = new String[]{"1", "1.5", "2", "2.5", "3"};
                                     session.setAttribute("options", options);
                                 }
                                 String sessionR = (String) session.getAttribute("r");

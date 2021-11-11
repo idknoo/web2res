@@ -202,7 +202,6 @@ tr {
     width: 99%;
     opacity: 0;
 }
-
 .disappearing {
     opacity: 1;
     animation-duration: 5s;

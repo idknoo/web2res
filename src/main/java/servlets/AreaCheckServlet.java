@@ -24,10 +24,10 @@ public class AreaCheckServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         rVals.add(1.0);
+        rVals.add(1.5);
         rVals.add(2.0);
+        rVals.add(2.5);
         rVals.add(3.0);
-        rVals.add(4.0);
-        rVals.add(5.0);
     }
 
     @Override
@@ -93,6 +93,6 @@ public class AreaCheckServlet extends HttpServlet {
 
     private boolean validateValues(double x, double y, double r) {
         boolean areNumbers = !Double.isNaN(x) && !Double.isNaN(y) && !Double.isNaN(r);
-        return areNumbers && x <= 3 && x >= -5 && y <= 5 && y >= -3 && rVals.contains(r);
+        return areNumbers && x <= 3 && x >= -5 && y <= 3 && y >= -3 && rVals.contains(r);
     }
 }
